@@ -35,7 +35,7 @@ st.sidebar.header("User Input")
 # Collect user input
 age = st.sidebar.number_input("Age", min_value=0, max_value=100, value=50)
 sex = st.sidebar.selectbox("Sex", [0, 1])
-cp = st.sidebar.selectbox("Chest Pain Type", [0, 1, 2, 3])
+cp = st.sidebar.selectbox("Chest Pain Type", min_value=1, max_value=4, value=4)
 trtbps = st.sidebar.number_input("Resting Blood Pressure (mm Hg)", min_value=0, max_value=200, value=120)
 chol = st.sidebar.number_input("Cholesterol (mg/dl)", min_value=0, max_value=600, value=200)
 fbs = st.sidebar.selectbox("Fasting Blood Sugar > 120 mg/dl", [0, 1])
